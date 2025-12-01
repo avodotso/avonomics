@@ -1,0 +1,641 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metadata": {
+    "title": "Avonomics Blueprint: The Definitive Tokenomic Architecture For Avo's Marketplace",
+    "version": "1.0.0",
+    "status": "draft",
+    "created_at": "2025-11-28",
+    "last_updated": "2025-11-28",
+    "authors": [],
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2025-11-28",
+        "description": "Initial JSON conversion from PDF document"
+      }
+    ]
+  },
+  "executive_summary": {
+    "title": "Executive Introduction: The Economic Imperative of the Agentic Era",
+    "section_number": 1,
+    "content": {
+      "overview": "The convergence of high-throughput blockchain infrastructure and autonomous artificial intelligence (AI) has precipitated a fundamental restructuring of on-chain capital markets. We are transitioning from an era defined by human-latency interactions which is characterized by manual discretionary trading and static liquidity provision to an 'Agentic Economy' dominated by autonomous trading agents, smart indexes, and algorithmically managed funds.",
+      "solana_context": "On the Solana network, which provides the requisite sub-second finality and low-cost execution environment for high-frequency agentic workflows, this transition is already rapidly accelerating. Projects such as ai16z and Virtuals Protocol have demonstrated the immense market demand for tokenized autonomous agents, yet the infrastructure connecting these sophisticated agents to retail capital remains fragmented and nascent.",
+      "avo_positioning": "Avo positions itself as the foundational marketplace or the 'App Store' and execution layer for this emerging economy. By facilitating shared-custodial pools that allow users to mirror the portfolios of any algorithm such as AI agents, indexes, and so on.",
+      "economic_challenge": "The project faces a distinct economic challenge: the AVO token is already circulating, and the protocol team lacks a significant pre-mined supply to incentivize growth or secure governance. This constraint necessitates a radically different economic blueprint than the standard 'high emissions' liquidity mining models of the 2020-2022 DeFi cycle.",
+      "solution_overview": "This report presents the Avonomics blueprint: a comprehensive, exhaustive tokenomic architecture designed to solve the 'Fair Launch' dilemma through the weaponization of protocol revenue. Unlike inflationary models that debase token holders to fund operations, our Avonomics rely on a 'Real Yield' engine driven by the velocity of money."
+    },
+    "strategic_pillars": [
+      {
+        "number": 1,
+        "name": "Velocity-Based Revenue Generation",
+        "description": "Monetizing the high turnover rate of AI agents through transaction fees rather than static management fees."
+      },
+      {
+        "number": 2,
+        "name": "Referral-Driven Growth",
+        "description": "Leveraging a decentralized sales force of portfolio deployers through an aggressive 80/20 revenue split that functions as a programmatic Customer Acquisition Cost (CAC)."
+      },
+      {
+        "number": 3,
+        "name": "Time-Weighted Conviction (Seeder Program)",
+        "description": "Solving the mercenary capital problem by rewarding long-term lockers with SOL-denominated dividends, creating a 'black hole' for circulating AVO supply."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "section_number": 2,
+      "title": "Market Context: The Shift to Autonomous Liquidity on Solana",
+      "overview": "To understand the necessity of the proposed Avonomics model, one must first analyze the structural shifts in the Solana ecosystem that Avo addresses. The rise of AI trading agents is not merely a narrative trend but a technological inevitability driven by the limitations of human attention and the efficiency of algorithmic execution.",
+      "subsections": [
+        {
+          "subsection_number": "2.1",
+          "title": "The Technical Supremacy of Solana for AI Agents",
+          "content": "The choice of Solana as the substrate for Avo is non-trivial. The deployment of autonomous trading agents requires a blockchain environment capable of supporting high-frequency rebalancing without eroding principal through friction costs. Ethereum, with its 12-second block times and variable gas fees that often exceed $5-50 per transaction, renders granular AI strategies economically unviable for all but the largest portfolios.",
+          "solana_advantages": [
+            {
+              "feature": "Throughput",
+              "description": "Theoretical capacity of 65,000+ transactions per second (TPS) (viable average of 4,000 TPS) allows thousands of agents to rebalance simultaneously without congestion."
+            },
+            {
+              "feature": "Latency",
+              "description": "Block times of ~400ms enable agents to react to market inefficiencies, news events, and on-chain signals in near real-time."
+            },
+            {
+              "feature": "Cost Efficiency",
+              "description": "Transaction fees consistently below $0.001 allow for 'micro-rebalancing' adjusting portfolio weights by fractions of a percent to capture small arbitrage opportunities or manage risk."
+            }
+          ],
+          "market_context": "These technical characteristics have fostered a thriving ecosystem of 'Agentic' tokens. The market capitalization of AI agent tokens on Solana, led by projects like ai16z, has reached multi-billion dollar valuations, signaling deep retail and institutional appetite. However, most existing implementations are singular tokenized agents without real agentic trading workflows. Avo's role as a marketplace aggregates these disparate agents into a unified interface, providing the discovery, tracking, and execution layers missing from the current landscape."
+        },
+        {
+          "subsection_number": "2.2",
+          "title": "The 'Fair Launch' Constraint and Opportunity",
+          "content": "The Avo project's specific circumstance. A circulating token with low team ownership presents both a risk and an opportunity.",
+          "risk": "Without a large treasury of pre-mined tokens, the team cannot rely on selling tokens to fund operations or using massive token emissions to bribe liquidity providers (a strategy that ultimately depresses price).",
+          "opportunity": "This constraint forces the protocol to be 'Real Yield' native from day one. There is no safety net of inflation. The protocol must generate revenue to survive. This alignment creates a highly attractive narrative for investors tired of 'predatory tokenomics' where insiders dump on retail. By committing to buy back tokens from the open market to build its treasury (The 'Recapture' Strategy), Avo aligns the team's incentives perfectly with the token holders: both benefit solely from the appreciation of the asset and the generation of revenue."
+        }
+      ]
+    },
+    {
+      "section_number": 3,
+      "title": "The Revenue Engine: Flow-Based Economics",
+      "overview": "The core of the Avonomics blueprint is the revenue generation mechanism. Unlike traditional asset management platforms that charge a percentage of Assets Under Management (AUM) annually, Avo monetizes flow which is the movement of capital into and out of strategies.",
+      "subsections": [
+        {
+          "subsection_number": "3.1",
+          "title": "The 1% Swap Fee: Capturing the Velocity Premium",
+          "content": "Avo charges a flat 1% fee on every swap that occurs on the platform. In the context of generic AMMs like Uniswap (0.3%), this fee appears high. However, in the context of managed products, it represents a significant value proposition.",
+          "fee_structure": {
+            "base_fee_percentage": 1.0,
+            "fee_type": "swap_fee",
+            "comparison": {
+              "uniswap": 0.3,
+              "avo": 1.0
+            }
+          },
+          "sub_subsections": [
+            {
+              "number": "3.1.1",
+              "title": "The 'Convenience Yield' Justification",
+              "content": "When a user swaps into an Avo portfolio, they are not merely exchanging Token A for Token B.",
+              "value_propositions": [
+                {
+                  "name": "Accessing Intelligence",
+                  "description": "Gaining exposure to a complex, automated strategy managed by an AI agent or an index manager."
+                },
+                {
+                  "name": "Automating Execution",
+                  "description": "The platform automatically rebalances the shared-custodial pool to match the underlying portfolio. A user attempting to replicate a 10-token index manually on a DEX would pay 10 separate swap fees, likely suffer higher slippage, and incur significant time costs."
+                },
+                {
+                  "name": "Atomic Rebalancing",
+                  "description": "The 1% fee bundles the cost of entry with the utility of ongoing management."
+                }
+              ],
+              "conclusion": "Therefore, the 1% fee should be viewed not as a trading fee, but as an access fee. It monetizes the 'Convenience Yield' of the platform."
+            },
+            {
+              "number": "3.1.2",
+              "title": "Volatility as a Revenue Driver",
+              "content": "The 'Flow-Based' model makes Avo's revenue correlated with volatility rather than asset prices.",
+              "comparison": {
+                "aum_model": "If crypto prices fall 50%, revenue falls 50%.",
+                "flow_model": "In high-volatility environments (crashes or pumps), users trade more frequently. They enter and exit positions to manage risk or chase pumps."
+              },
+              "conclusion": "This ensures that Avo generates robust revenue even in bear markets, provided there is trading activity."
+            },
+            {
+              "number": "3.1.3",
+              "title": "Volatility and Protections",
+              "content": "Even though Avo's 'Flow-Based' model rewards the protocol for processing more trades, Avo is still aligned with users because if users have a bad experience or get whipsawed by noise, they churn, and flow dries up.",
+              "user_protection_mechanisms": [
+                {
+                  "name": "Minimum USD Swap Value",
+                  "description": "A hard dollar floor for any trade to go through.",
+                  "purpose": "Avoid tiny, spammy, or dust trades that generate fees and slippage without meaningfully improving the user's position.",
+                  "example": "Don't swap if the total trade value is less than $1."
+                },
+                {
+                  "name": "Band Threshold",
+                  "description": "A tolerance band around the current allocation or price. Trades only execute if the market has moved meaningfully outside that band.",
+                  "purpose": "Prevent over-trading on minor price wiggles, which can eat into returns via fees and slippage.",
+                  "example": "Only rebalance if the portfolio has drifted more than 2% in either direction."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subsection_number": "3.2",
+          "title": "The Bifurcated Split: Organic vs. Referred",
+          "content": "Avo employs a dynamic fee split mechanism designed to aggressively incentivize user acquisition through a decentralized network of 'Portfolio Deployers' (Creators). This system creates a game-theoretic equilibrium that favors the platform's growth.",
+          "scenarios": {
+            "organic_acquisition": {
+              "name": "Scenario A: Organic Acquisition (The 'House' Win)",
+              "description": "When a user arrives at Avo directly (without a referral link) and executes a swap.",
+              "fee_structure": {
+                "total_fee_percentage": 1.0,
+                "avo_share_percentage": 80,
+                "avo_share_of_volume": 0.80,
+                "deployer_share_percentage": 20,
+                "deployer_share_of_volume": 0.20
+              },
+              "analysis": "This is the baseline scenario. Avo captures the majority of the value because it provided the customer. The Deployer receives a 20% royalty for providing the product (the strategy), which is standard in digital marketplaces."
+            },
+            "referred_acquisition": {
+              "name": "Scenario B: Referred Acquisition (The 'Deployer' Win)",
+              "description": "When a user arrives via a Deployer's unique referral link.",
+              "fee_structure": {
+                "user_discount_percentage": 10,
+                "effective_fee_percentage": 0.90,
+                "deployer_share_percentage": 80,
+                "deployer_share_of_volume": 0.72,
+                "avo_share_percentage": 20,
+                "avo_share_of_volume": 0.18
+              },
+              "deployer_earnings_comparison": {
+                "organic_earnings_percentage": 0.20,
+                "referred_earnings_percentage": 0.72,
+                "increase_multiplier": 3.6,
+                "increase_percentage": 360
+              }
+            }
+          }
+        },
+        {
+          "subsection_number": "3.3",
+          "title": "Game Theoretic Implications: The 'Sales Force' Effect",
+          "content": "This structure solves the 'Cold Start' problem for marketplaces.",
+          "implications": [
+            {
+              "name": "The Deployer's Mandate",
+              "description": "Because earning 0.72% is vastly superior to 0.20%, no rational Deployer will ever simply list their portfolio on Avo and hope for organic traffic. They will aggressively market their specific referral link. They will put it in their Twitter bio, their Discord announcements, and their YouTube descriptions. They become a highly motivated, decentralized sales force for Avo."
+            },
+            {
+              "name": "The User's Mandate",
+              "description": "Because paying 0.9% is strictly better than paying 1.0% (effective 10% discount), no rational user will sign up without a referral code if they can find one. This creates a 'search behavior' where users actively look for Deployer links, ensuring the Deployers get credited."
+            },
+            {
+              "name": "The Catch (Portfolio-Scoped Discount)",
+              "description": "The 0.1% fee discount is not platform-wide. It only applies when the user trades inside the specific portfolio tied to the Deployer's link.",
+              "example": "If a user signs up through Alice's portfolio link, they pay 0.9% only on trades in Alice's portfolio. If they later allocate to Bob's portfolio (or any other), they pay the standard 1.0% fee unless they are also onboard through Bob's link."
+            },
+            {
+              "name": "Avo's CAC Calculation",
+              "description": "On referred trades, Avo gives up 62 bps of margin per dollar of volume.",
+              "breakdown": {
+                "deployer_redirect_bps": 52,
+                "user_discount_bps": 10,
+                "total_cac_bps": 62
+              }
+            }
+          ],
+          "strategic_insight": "While Avo's margin drops by 77.5% on referred trades, this is the cost of 'hyper-growth.' As the platform matures and organic brand recognition grows, the ratio of Organic to Referred users will naturally drift back toward Organic, expanding margins over time without raising fees."
+        }
+      ],
+      "tables": [
+        {
+          "table_id": "3.1",
+          "title": "Revenue Distribution Logic Per $100,000 Volume",
+          "columns": ["Scenario", "User Pays", "Deployer Earns", "Avo Net Revenue"],
+          "rows": [
+            {
+              "scenario": "Organic (No Link)",
+              "user_pays": {
+                "amount": 1000,
+                "percentage": 1.0
+              },
+              "deployer_earns": {
+                "amount": 200,
+                "percentage": 20
+              },
+              "avo_net_revenue": {
+                "amount": 800,
+                "percentage": 80
+              }
+            },
+            {
+              "scenario": "Referred (With Link)",
+              "user_pays": {
+                "amount": 900,
+                "percentage": 0.9
+              },
+              "deployer_earns": {
+                "amount": 720,
+                "percentage": 80
+              },
+              "avo_net_revenue": {
+                "amount": 180,
+                "percentage": 20
+              }
+            },
+            {
+              "scenario": "Delta",
+              "user_pays": {
+                "amount": -100,
+                "note": "Save 10%"
+              },
+              "deployer_earns": {
+                "amount": 520,
+                "note": "+260%"
+              },
+              "avo_net_revenue": {
+                "amount": -620,
+                "note": "-77.5%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 4,
+      "title": "The Seeder Program: Engineering 'Diamond Hands'",
+      "overview": "The 'Seeder' program is the central mechanism for token value accrual. It addresses the 'Mercenary Capital' problem where users provide liquidity only for short-term incentives by introducing a Time-Weighted Voting/Escrow (ve) system that rewards conviction with Real Yield in SOL.",
+      "subsections": [
+        {
+          "subsection_number": "4.1",
+          "title": "The Mechanism: veAVO (Voting Escrow Avo)",
+          "content": "Users lock their AVO tokens in a smart contract (utilizing the Solana Voter Stake Registry architecture) for a fixed duration. In return, they receive a non-transferable balance of veAVO (Energy). This veAVO balance determines their share of the revenue pool.",
+          "implementation": {
+            "architecture": "Solana Voter Stake Registry",
+            "token_name": "veAVO",
+            "token_type": "non-transferable",
+            "alias": "Energy"
+          }
+        },
+        {
+          "subsection_number": "4.2",
+          "title": "The Reward Asset: Why SOL?",
+          "content": "The blueprint explicitly allocates 30% of Avo's Net Revenue to the Seeder pool, paid in SOL.",
+          "allocation_percentage": 30,
+          "reward_asset": "SOL",
+          "rationale": [
+            {
+              "reason": "Non-Dilutive Yield",
+              "explanation": "Most DeFi protocols pay staking rewards in their own token (printing AVO to pay AVO stakers). This creates sell pressure as stakers sell the 'yield' to realize profit. Paying in SOL allows stakers to realize profit without selling AVO."
+            },
+            {
+              "reason": "Asset Hardness",
+              "explanation": "SOL is the reserve currency of the Solana ecosystem. It has high liquidity and utility. Earning SOL is often perceived as 'better than cash' by Solana natives."
+            },
+            {
+              "reason": "Counter-Cyclical Stability",
+              "explanation": "If the AVO token price dips but platform volume (revenue) remains stable, the APR (Annualized Revenue / Token Price) actually increases, creating a natural 'value floor' that attracts buyers."
+            }
+          ]
+        },
+        {
+          "subsection_number": "4.3",
+          "title": "Modeling the 'FOMO' Engine",
+          "content": "The blueprint notes: 'When few people lock, APR is huge; as more join, APR dilutes.' This is a self-correcting game theory loop designed to trigger Fear Of Missing Out (FOMO).",
+          "scenario_simulation": {
+            "assumptions": {
+              "daily_volume_usd": 2000000,
+              "traffic_mix": {
+                "organic_percentage": 50,
+                "referred_percentage": 50
+              },
+              "net_daily_revenue": {
+                "organic": {
+                  "volume_usd": 1000000,
+                  "revenue_usd": 8000,
+                  "fee_percentage": 0.8
+                },
+                "referred": {
+                  "volume_usd": 1000000,
+                  "revenue_usd": 1800,
+                  "fee_percentage": 0.18
+                },
+                "total_daily_usd": 9800,
+                "total_annual_usd": 3570000
+              },
+              "seeder_pool": {
+                "percentage": 30,
+                "daily_usd": 2940,
+                "annual_usd": 1070000
+              }
+            },
+            "phases": [
+              {
+                "phase": 1,
+                "name": "Early Seeding (Low TVL)",
+                "total_avo_locked": 10000000,
+                "value_at_0_01_usd": 100000,
+                "average_multiplier": 2.0,
+                "total_veAVO": 20000000,
+                "yield_distributed_usd": 1070000,
+                "staked_value_usd": 100000,
+                "apr_percentage": 1070,
+                "result": "The insane APR forces users to buy and lock AVO immediately to capture the yield."
+              },
+              {
+                "phase": 2,
+                "name": "Equilibrium (Maturity)",
+                "total_avo_locked": 200000000,
+                "value_usd": 2000000,
+                "average_multiplier": 3.5,
+                "yield_distributed_usd": 1070000,
+                "staked_value_usd": 2000000,
+                "apr_percentage": 53.5,
+                "result": "A sustainable, high-yield 'Blue Chip' return that encourages holding."
+              }
+            ],
+            "conclusion": "This dynamic creates a rush to be 'first' and to lock for 'longest,' effectively removing supply from the market permanently."
+          }
+        }
+      ],
+      "tables": [
+        {
+          "table_id": "4.1",
+          "title": "The Time-Preference Curve",
+          "columns": ["Lock Duration", "Multiplier", "Strategic Rationale"],
+          "rows": [
+            {
+              "lock_duration_days": 30,
+              "multiplier": 1.0,
+              "tier_name": "The Baseline",
+              "strategic_rationale": "Filters out high-frequency 'flash' stakers and sandwich attacks. Ensures a minimum stability of TVL."
+            },
+            {
+              "lock_duration_days": 90,
+              "multiplier": 2.0,
+              "tier_name": "The Quarter Cycle",
+              "strategic_rationale": "Incentivizes users to commit for a standard business cycle. A 50% boost over baseline for just 2 more weeks is a strong 'nudge.'"
+            },
+            {
+              "lock_duration_days": 180,
+              "multiplier": 4.0,
+              "tier_name": "The Mid-Term",
+              "strategic_rationale": "Rewarding this with 4x power aligns with true 'investors' rather than 'traders.'"
+            },
+            {
+              "lock_duration_days": 365,
+              "multiplier": 7.0,
+              "tier_name": "The Max Lock",
+              "strategic_rationale": "By offering 7x power, the protocol makes it mathematically inefficient to be a short-term locker. A user locking for 1 year earns the same yield as a user locking 5x the capital for 2 weeks. This heavily favors the community over large holders."
+            },
+            {
+              "lock_duration_days": 730,
+              "multiplier": 12.0,
+              "tier_name": "The Multi-Cycle Believer",
+              "strategic_rationale": "Two years in crypto spans entire narratives, cycles, and meta shifts. 12x power is for people and entities who aren't just betting on a feature, they're betting on Avo as infra. This tier heavily favors builders, strategists, and long-term ecosystem participants."
+            },
+            {
+              "lock_duration_days": 1460,
+              "multiplier": 18.0,
+              "tier_name": "The 'I'm Marrying This' Tier",
+              "strategic_rationale": "Four years is effectively an eternity on-chain. At 18x power, 1 AVO locked here carries similar weight to 18 AVO locked for 30 days. This is where founders, core contributors, and true fanatics live. It structurally shifts influence and yield toward those who are willing to commit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 5,
+      "title": "Operations & Treasury: The 'Recapture' Strategy",
+      "overview": "The remaining 70% of Net Revenue is allocated to the Operational (Ops) Treasury. This allocation follows a strict waterfall structure designed to ensure protocol survival, followed by an aggressive 'Recapture' of the token supply.",
+      "treasury_wallet": "AvoNtAaLBy9dWxhr1FksG6aKp3hbvEGRGyD8wqy6cado",
+      "allocation_percentage": 70,
+      "subsections": [
+        {
+          "subsection_number": "5.1",
+          "title": "The Operational Cost Base (Ops)",
+          "content": "Before profits can be distributed or burned, the protocol must cover its existence costs. Running a high-performance AI marketplace on Solana is capital intensive.",
+          "cost_categories": [
+            {
+              "category": "Onchain-infra",
+              "description": "High-performance RPC nodes (e.g., Helius, Triton) are required to track thousands of agent portfolios in real-time."
+            },
+            {
+              "category": "Data Feeds",
+              "description": "Institutional-grade data APIs (Birdeye, Pyth, Uniblock) are necessary for accurate rebalancing."
+            },
+            {
+              "category": "Offchain-infra",
+              "description": "Servers, databases, and everything in between."
+            },
+            {
+              "category": "Team & Security",
+              "description": "Salaries for developers and recurring audit costs to ensure smart contract safety."
+            }
+          ]
+        },
+        {
+          "subsection_number": "5.2",
+          "title": "The 'Recapture' Mandate: Building the Fortress",
+          "content": "Once the Ops cost base is covered, 100% of the surplus profit is directed to Open Market Buybacks. The explicit goal is to 'Secure at least 10% of the total circulating supply.'",
+          "surplus_allocation": {
+            "destination": "Open Market Buybacks",
+            "percentage": 100,
+            "target": "10% of total circulating supply"
+          },
+          "strategic_importance": [
+            {
+              "benefit": "Strategic Reserves",
+              "description": "These tokens can be used for future CEX listings (market making requirements) or partnership grants without diluting existing holders."
+            },
+            {
+              "benefit": "Price Support",
+              "description": "Consistent buy pressure from the protocol acts as a 'soft floor' for the token price."
+            }
+          ],
+          "execution_strategy": {
+            "name": "TWAP & DCA",
+            "description": "To avoid front-running by MEV bots, buybacks should not be executed in single massive lumps. The Treasury should utilize Time-Weighted Average Price (TWAP) orders or On-Chain DCA (using Jupiter's DCA program) to purchase AVO continuously over time. This smooths out volatility and ensures efficient execution."
+          }
+        },
+        {
+          "subsection_number": "5.3",
+          "title": "Phase 3: The 'Incinerator' (Deflation)",
+          "content": "Once the 10% threshold is reached, the strategy shifts from Accumulation to Deflation.",
+          "mechanism": {
+            "action": "100% of the buybacks are incinerated/burnt",
+            "trigger": "After 10% supply threshold is reached"
+          },
+          "economic_impact": "This permanently reduces the denominator of the 'Earnings Per Token' equation. As supply shrinks, the remaining tokens represent a larger percentage of the network. This creates a feedback loop: Higher Volume -> More Burns -> Lower Supply -> Higher Price -> More Attention -> Higher Volume."
+        }
+      ]
+    },
+    {
+      "section_number": 6,
+      "title": "Technical Architecture & Implementation on Solana",
+      "overview": "Executing Avonomics requires a sophisticated suite of smart contracts leveraging Solana's unique primitives.",
+      "subsections": [
+        {
+          "subsection_number": "6.1",
+          "title": "The Seeder Engine: SPL Governance + VSR",
+          "content": "The 've' mechanism is implemented using the Voter Stake Registry (VSR) plugin for SPL Governance.",
+          "implementation": {
+            "framework": "Voter Stake Registry (VSR)",
+            "governance": "SPL Governance",
+            "configuration": {
+              "min_lockup_days": 30,
+              "max_lockup_days": 1460,
+              "voting_power_multiplier": {
+                "type": "step-wise",
+                "range": {
+                  "min": 1,
+                  "max": 18
+                }
+              }
+            },
+            "reward_distribution": {
+              "method": "Merkle Distributor",
+              "description": "A snapshot of veAVO balances is taken weekly. The 30% revenue share is deposited into a Vault, and a Merkle Root is published. Users claim their SOL at their convenience. This puts the gas cost of claiming on the user.",
+              "snapshot_frequency": "weekly",
+              "status": "being reviewed and studied"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "section_number": 7,
+      "title": "Conclusion: The 'Cash Cow' of Solana AI",
+      "content": "The Avonomics blueprint presents a cohesive, closed-loop economic system. It addresses the project's primary weakness 'lack of team supply' by turning the protocol into a revenue-generating machine that buys its own independence.",
+      "value_propositions": {
+        "for_deployers": {
+          "benefit": "The most aggressive revenue split in the industry (80%)",
+          "outcome": "Turning them into evangelists"
+        },
+        "for_users": {
+          "benefit": "A tangible discount (10%) and access to the AI agent revolution"
+        },
+        "for_holders": {
+          "benefit": "A way to earn 'Real Yield' in hard assets (SOL) and participate in a deflationary asset via the Seeder program"
+        }
+      },
+      "final_statement": "By implementing this blueprint, Avo does not just create a token; it creates a financial engine capable of sustaining itself through the volatility of the crypto market, securing its future through the systematic accumulation of its own supply, and ultimately becoming the central liquidity hub for the AI Agent economy."
+    }
+  ],
+  "references": {
+    "tables": [
+      {
+        "id": "3.1",
+        "title": "Revenue Distribution Logic (Organic vs. Referred)"
+      },
+      {
+        "id": "4.1",
+        "title": "Seeder Program Multiplier Curve (1x - 18x)"
+      }
+    ],
+    "citations": {
+      "solana_agent_context": 3,
+      "competitor_benchmarks": 6,
+      "technical_architecture": 8,
+      "yield_fee_dynamics": 9
+    },
+    "works_cited": [
+      {
+        "number": 1,
+        "title": "Solana: Global Financial Infrastructure for Everyone",
+        "url": "https://solana.com/",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 2,
+        "title": "Solana vs Ethereum: Which is Better in 2025? | Pros and Cons - Backpack Learn",
+        "url": "https://learn.backpack.exchange/articles/solana-vs-ethereum",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 3,
+        "title": "AI16Z Live Price Chart, Market Cap & News Today - CoinGecko",
+        "url": "https://www.coingecko.com/en/coins/ai16z",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 4,
+        "title": "ai16z becomes first AI token on Solana to hit $2B market cap - Crypto Briefing",
+        "url": "https://cryptobriefing.com/ai-token-solana-market-cap/",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 5,
+        "title": "Solana vs Ethereum: A Comparative Guide to Performance and Potential - Ledger",
+        "url": "https://www.ledger.com/academy/topics/crypto/solana-vs-ethereum-performance-guide",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 6,
+        "title": "Jupiter Exchange Adopts Long-Term JUP Buyback Strategy | Bitget News",
+        "url": "https://www.bitget.com/news/detail/12560604574076",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 7,
+        "title": "Sol-Incinerator Review: Burn Spam and Recover Locked SOL - Soladex",
+        "url": "https://www.soladex.io/project/sol-incinerator",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 8,
+        "title": "blockworks-foundation/voter-stake-registry: A vote weight plugin for spl-governance",
+        "url": "https://github.com/blockworks-foundation/voter-stake-registry",
+        "accessed": "2025-11-28"
+      },
+      {
+        "number": 9,
+        "title": "Fee Structures | Explore our trading fees - Kraken",
+        "url": "https://www.kraken.com/en-au/features/fee-schedule",
+        "accessed": "2025-11-28"
+      }
+    ]
+  },
+  "parameters": {
+    "fee_structure": {
+      "base_swap_fee_percentage": 1.0,
+      "referral_discount_percentage": 10,
+      "effective_referred_fee_percentage": 0.9
+    },
+    "revenue_split": {
+      "organic": {
+        "avo_share_percentage": 80,
+        "deployer_share_percentage": 20
+      },
+      "referred": {
+        "avo_share_percentage": 20,
+        "deployer_share_percentage": 80
+      }
+    },
+    "treasury_allocation": {
+      "seeder_pool_percentage": 30,
+      "operations_percentage": 70
+    },
+    "seeder_multipliers": [
+      { "days": 30, "multiplier": 1.0 },
+      { "days": 90, "multiplier": 2.0 },
+      { "days": 180, "multiplier": 4.0 },
+      { "days": 365, "multiplier": 7.0 },
+      { "days": 730, "multiplier": 12.0 },
+      { "days": 1460, "multiplier": 18.0 }
+    ],
+    "recapture_strategy": {
+      "target_supply_percentage": 10,
+      "post_target_action": "burn"
+    }
+  }
+}
